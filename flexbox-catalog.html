@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Kopi - Distributor Kopi Terpercaya</title>
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <div class="top-container">
+        <header>
+            <h1>To-Kopi</h1>
+            <p>Distributor Kopi Terpercaya</p>
+        </header>
+
+        <nav>
+            <a href="#">Beranda</a>
+            <a href="#produk">Produk</a>
+            <a href="#promo">Promo</a>
+            <a href="faqtokopi.html" target="_blank">FAQ</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="sidebar" id="promo">
+                <h2>Tentang To-Kopi</h2>
+                <p>To-Kopi, bukan sekedar distributor kopi terpercaya yang menyediakan kebutuhan kopimu, tapi berusaha mengerti kamu.</p>
+                <p>To-kopi, Yang paling bisa diandalin kalo soal kopi.</p>
+            </div>
+
+            <div class="content">
+                <div class="promo-section">
+                    <h3>🎉 PROMO BULAN INI</h3>
+                    <ul>
+                        <li>BUY 1 GET 1 250g Ground Coffee Robusta Gold</li>
+                        <li>TEKO ANGSA 600ml DISCOUNT</li>
+                        <li>PEMBELIAN MIN. 100K FREE TO-KOPI AMERICANO</li>
+                        <li>GUNAKAN KODE PROMO "NOVFFEE2025" UNTUK POTONGAN 25K RUPIAH</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content" style="flex: 1;" id="produk">
+                <h2>Produk Pilihan</h2>
+                <div class="catalog-container">
+                    <div class="product-card">
+                        <img src="asset/images/tampilanprodukkopi.jpg" alt="Kopi">
+                        <h3>Kopi</h3>
+                        <a href="detail-kopi.html"><button>Detail Barang</button></a>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="asset/images/tampilanprodukmesinkopi.jpg" alt="Mesin Kopi">
+                        <h3>Mesin Kopi</h3>
+                        <a href="detail-mesin.html"><button>Detail Barang</button></a>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="asset/images/tampilanprodukteko.jpeg" alt="Teko">
+                        <h3>Teko</h3>
+                        <a href="detail-teko.html"><button>Detail Barang</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="kontak" id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>📧 Email: cstokopi@gmail.com</p>
+        <p>📱 Telepon: +62 812-xxxx-xxxx</p>
+    </div>
+
+    <footer>
+        &copy; 2025 To-Kopi. Semua Hak Dilindungi
+    </footer>
+
+     <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.top-container');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled-header');
+            } else {
+                header.classList.remove('scrolled-header');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Answer Question - To-Kopi</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #703B3B;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: wheat;
+    }
+
+    /* Kotak FAQ */
+    .faq {
+      background-color: #a85959;
+      border-radius: 5px;
+      margin: 10px auto;
+      padding: 10px;
+      width: 80%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .pertanyaan {
+      font-weight: bold;
+      cursor: pointer;
+      background-color: wheat;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .jawaban {
+      display: none; /* disembunyikan dulu */
+      padding: 10px;
+      margin-top: 5px;
+      background-color: wheat;
+      border-left: 3px solid #703B3B;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Fast Answer Question - To-Kopi</h2>
+
+  <!-- FAQ 1 -->
+  <div class="faq">
+    <div class="pertanyaan" onclick="tampilJawaban(1)">
+      1. Apa itu To-Kopi?
+    </div>
+    <div class="jawaban" id="jawaban1">
+      To-kopi adalah distributor kopi terpercaya yang menyediakan berbagai jenis kopi dan perlengkapan kopi untuk memenuhi kebutuhan para pecinta kopi.
+    </div>
+  </div>
+
+  <!-- FAQ 2 -->
+  <div class="faq">
+    <div class="pertanyaan" onclick="tampilJawaban(2)">
+      2. Apa saja produk yang dijual di To-Kopi?
+    </div>
+    <div class="jawaban" id="jawaban2">
+      Kami menjual berbagai jenis kopi, mesin kopi, teko, dan perlengkapan lainnya yang berkaitan dengan kopi.
+    </div>
+  </div>
+
+  <!-- FAQ 3 -->
+  <div class="faq">
+    <div class="pertanyaan" onclick="tampilJawaban(3)">
+      3. Apakah To-kopi menerima pembelian via online?
+    </div>
+    <div class="jawaban" id="jawaban3">
+      Ya, kami menerima pembelian secara online melalui website resmi dan marketplace mitra kami.
+    </div>
+    </div>
+    
+    <!-- FAQ 4 -->
+  <div class="faq">
+    <div class="pertanyaan" onclick="tampilJawaban(4)">
+      4. Apakah To-kopi memiliki toko offline?
+    </div>
+    <div class="jawaban" id="jawaban4">
+      Ya, toko offline kami berlokasi di Jakarta dan Surabaya. Silakan kunjungi media sosial kami untuk informasi lebih detail.
+    </div>
+    </div>
+  
+
+  <script>
+    // Fungsi sederhana untuk menampilkan jawaban
+    function tampilJawaban(no) {
+      var jawaban = document.getElementById("jawaban" + no);
+      if (jawaban.style.display === "none") {
+        jawaban.style.display = "block";
+      } else {
+        jawaban.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
